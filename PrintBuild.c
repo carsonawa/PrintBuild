@@ -52,12 +52,12 @@ int main(int argc, char* argv[])
 		build(argv[1], 114514, "啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊");
 		break;
 	case 3:
-		// 如果传入两个个则当做输出路径、输出内容
+		// 如果传入两个则当做输出路径、输出内容
 		build(argv[1], 114514, argv[2]);
 		break;
 	default:
 	{
-		// 如果传入两个个则当做输出路径、输出内容、次数
+		// 如果传入三个则当做输出路径、输出内容、次数
 		int count;
 		build(argv[1], sscanf(argv[3], "%d", &count), argv[2]);
 		break;
