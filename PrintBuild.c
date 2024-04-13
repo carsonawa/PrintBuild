@@ -27,7 +27,7 @@ void build(const char* path, int count, const char* text)
 	for (int i = 0; i < count; i++)
 	{
 		// 循环写入打印函数
-		fprintf(output, "    puts(%s);\n", text); 
+		fprintf(output, "    puts(\"%s\");\n", text); 
 	}
 	// 封闭main函数代码块
 	fputc('}', output);
